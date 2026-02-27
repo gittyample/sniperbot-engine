@@ -1,20 +1,27 @@
 SniperBot Engine
-Real-time financial data ingestion and signal evaluation framework built with Python.
+Production-style backend framework for real-time financial data ingestion and signal evaluation.
 
 Overview
-SniperBot Engine is a modular backend system designed to:
 
-Authenticate with external financial APIs (OAuth2)
+SniperBot Engine is a modular Python backend designed for secure API integration, structured data processing, and layered signal evaluation in cloud environments.
 
-Ingest structured market data
+The system is architected to:
 
-Normalize and transform option chain data
+Authenticate securely with external financial APIs using OAuth2
 
-Evaluate signals using layered mathematical logic
+Manage token lifecycle and refresh workflows
 
-Log structured outputs for post-run analytics
+Ingest and normalize structured market data
 
-Built for cloud deployment and continuous runtime execution.
+Transform option chain payloads into evaluation-ready records
+
+Apply layered signal evaluation logic
+
+Emit structured outputs for analytics and monitoring
+
+Operate in continuous runtime environments (e.g., AWS EC2)
+
+This repository exposes architectural scaffolding while omitting proprietary evaluation logic.
 
 Architecture
 
@@ -29,18 +36,32 @@ sniperbot-engine/
 ├── .gitignore
 └── README.md
 
+Design Principles
+
+Modular separation of concerns
+
+Explicit interface boundaries
+
+Production-oriented packaging (PEP 621 via pyproject.toml)
+
+Cloud-ready deployment structure
+
+Public-safe scaffolding with protected core logic
+
 Tech Stack
 
-Python
-
-Pandas
+Python 3.10+
 
 REST APIs
 
 OAuth2
 
+Structured JSON processing
+
+Pandas
+
 AWS EC2
 
 Linux
 
-Built by Michael H. Torres
+Built and maintained by Michael H. Torres
