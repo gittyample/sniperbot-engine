@@ -14,26 +14,31 @@ SniperBot Engine is a modular backend system designed to:
 
 Built for cloud deployment and continuous runtime execution.
 
-## Architecture
+Architecture
 
 sniperbot-engine/
-│
 ├── sniperbot_engine/
-├── docs/
-├── .github/workflows/
+│   ├── __init__.py
+│   ├── auth.py
+│   ├── ingestion.py
+│   └── signals.py
 ├── pyproject.toml
 ├── LICENSE.txt
-└── .gitignore
+├── .gitignore
+└── README.md
 
-## Tech Stack
+Tech Stack
 
-Python  
-Pandas  
-REST APIs  
-OAuth2  
-AWS EC2  
-Linux  
+Python
 
----
+Pandas
+
+REST APIs
+
+OAuth2
+
+AWS EC2
+
+Linux
 
 Built by Michael H. Torres
